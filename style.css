@@ -13,7 +13,7 @@ body{
 
 
 
-section{
+main{
     display: flex;
     justify-content: center;
 }
@@ -67,15 +67,13 @@ section{
     line-height: 20px;
 }
 
-.description > hr{
-    width: 94%;
-    margin-top: 5px;
-    color: hsl(215, 32%, 27%);
-}
 
-.description h4{
-    padding-bottom: 15px;
+
+.description a , h4{
+    margin-bottom: 15px;
     cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
 
 .description h4:hover{
@@ -94,31 +92,41 @@ section{
 
 .avatar-disc{
     display: flex;
-    margin-top: 15px;
-    gap: 15px;
+    gap: 10px;
+    border-top: 2px solid hsl(215, 32%, 27%);
+    width: 92%;
 }
 
 .avatar{
     height: 30px;
     border: 1px solid white;
     border-radius: 20px;
+    margin-top: 15px;
 }
 
-.avatar-disc > p ,a{
-    margin-top: 5px;
+.avatar-disc > ul{
+    list-style: none;
+    margin-top: 20px;
+
 }
 
-.avatar-disc > p > a{
+.avatar-disc   a{
     text-decoration: none;
     color: white;
 }
 
-.avatar-disc > p > a:hover{
-    color: hsl(178, 100%, 50%);
+.avatar-disc a:hover{
+    color: hsl(178, 100%, 50%)
 }
 
-.attribution, a {
+
+
+.attribution{
+
+    bottom: 0px;
     color: white;
+    margin-top: 600px;
+}
+.attribution a{
     text-decoration: none;
 }
-
